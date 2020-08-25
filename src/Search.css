@@ -1,0 +1,39 @@
+.Search input[value="search"] {
+  background-color: #faf9fa;
+  border: 1px solid #545454;
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  line-height: 0.5;
+  border-radius: 1px;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+.Search #location-emoji {
+  background-color: #faf9fa;
+  border: 1px solid #545454;
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  margin: 0;
+  line-height: 0.5;
+  border-radius: 1px;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  display: block;
+}
+.Search input[value="search"]:hover {
+  cursor: pointer;
+  background-color: #d5dfe5;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #f3efed;
+}
+.Search #location-emoji:hover {
+  cursor: pointer;
+  background-color: #d5dfe5;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #f3efed;
+}

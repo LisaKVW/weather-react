@@ -1,0 +1,14 @@
+.Forecast #header-upcoming {
+  font-family: "Heebo", sans-serif;
+  font-size: 17x;
+  color: #f3efed;
+  padding: 0 0 20px 0;
+}
+.Forecast #forecast {
+  font-family: "Heebo", sans-serif;
+  font-size: 14px;
+  padding: 0 5px 10px 0;
+  margin: auto;
+  text-align: center;
+  color: #f5a841;
+}
