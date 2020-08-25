@@ -6,7 +6,7 @@ export default function Closing() {
     <div className="Closing">
       <p className="github-link">
         <a
-          href="https://github.com/LisaKVW/WeatherApp"
+          href="https://github.com/LisaKVW/weather-react"
           target="_blank"
           className="gitlink"
         >

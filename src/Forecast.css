@@ -1,6 +1,7 @@
 .Forecast #header-upcoming {
   font-family: "Heebo", sans-serif;
-  font-size: 17x;
+  font-size: 17px;
+  font-weight: bold;
   color: #f3efed;
   padding: 0 0 20px 0;
 }

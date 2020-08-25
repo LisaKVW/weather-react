@@ -2,7 +2,7 @@
   font-family: "Heebo", sans-serif;
   list-style: none;
   margin: 30px;
-  font-size: medium;
+  font-size: 19px;
 }
 
 .Weather ul {
@@ -12,8 +12,10 @@
   text-transform: capitalize;
   max-width: 600px;
   margin: 0 30;
-  padding: 0 25px;
+  padding: 0 0 25px 10px;
   font-family: "Heebo", sans-serif;
+  font-weight: bolder;
+  font-size: 17px;
 }
 
 .Weather #weather-icon {
