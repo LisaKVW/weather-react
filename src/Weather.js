@@ -15,7 +15,7 @@ export default function Weather() {
     <div className="Weather">
       <p className="current-update-location"> </p>
       <div className="row">
-        <div className="col-4">
+        <div className="col">
           <ul>
             <li>{weatherData.city}</li>
             <li>{weatherData.date}</li>
@@ -24,7 +24,7 @@ export default function Weather() {
           </ul>
         </div>
 
-        <div className="col-4">
+        <div className="col">
           <ul>
             <br />
             <li> Humidity {weatherData.humidity}</li>
