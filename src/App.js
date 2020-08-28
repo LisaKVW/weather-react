@@ -5,8 +5,10 @@ import Closing from "./Closing";
 export default function App() {
   return (
     <div className="App">
-      <Layout />
-      <Closing />
+      <div className="Container">
+        <Layout />
+        <Closing />
+      </div>
     </div>
   );
 }
