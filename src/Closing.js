@@ -9,7 +9,6 @@ export default function Closing() {
           href="https://github.com/LisaKVW/weather-react"
           target="_blank"
           className="gitlink"
-          rel="noopener noreferrer"
         >
           Open-source code
         </a>{" "}
