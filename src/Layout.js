@@ -6,15 +6,15 @@ import Forecast from "./Forecast";
 import "./Layout.css";
 
 export default function Look() {
-    return (
-        <div className="Layout">
-            <div className="weather-app">
-                <Header />
-                <Search />
-                <Weather />
-                <Forecast />
-            </div>
-            <h1 className="Greetings"> </h1>
-        </div>
-    );
+  return (
+    <div className="Layout">
+      <div className="weather-app">
+        <Header />
+        <Search />
+        <Weather defaultCity="Haarlem" />
+        <Forecast />
+      </div>
+      <h1 className="Greetings"> </h1>
+    </div>
+  );
 }

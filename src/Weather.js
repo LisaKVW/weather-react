@@ -1,42 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Weather.css";
+import axios from "axios";
 
-export default function Weather() {
-  let weatherData = {
-    city: "New York",
-    date: "Sunday Aug. 16 16:00",
-    temperature: " 30 ℃ | 86 °F ",
-    description: "Sunny",
-    humidity: "60%",
-    wind: "2",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png",
-  };
-  return (
-    <div className="Weather">
-      <p className="current-update-location"> </p>
-      <div className="row">
-        <div className="col">
-          <ul>
-            <li>{weatherData.city}</li>
-            <li>{weatherData.date}</li>
-            <li>{weatherData.temperature}</li>
-            <li>{weatherData.description}</li>
-          </ul>
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
+
+  function showTemp(response) {
+    setWeatherData({
+      ready: true,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      description: response.data.weather[0].description,
+      date: "Monday, Aug. 31 16:00",
+      imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+    });
+  }
+
+  if (weatherData.ready) {
+    return (
+      <div className="Weather">
+        <p className="current-update-location"> </p>
+        <div className="row">
+          <div className="col">
+            <ul>
+              <li>{weatherData.city}</li>
+              <li>{weatherData.date}</li>
+              <li>{Math.round(weatherData.temperature)} ℃ </li>
+              <li>{weatherData.description}</li>
+            </ul>
+          </div>
         </div>
-
         <div className="col">
           <ul>
             <br />
-            <li> Humidity {weatherData.humidity}</li>
+            <li> Humidity {weatherData.humidity} % </li>
             <li> Wind {weatherData.wind} Km/H</li>
           </ul>
         </div>
+        <img src={weatherData.imgUrl} />
       </div>
-      <img
-        className="weatherImage"
-        src={weatherData.imgUrl}
-        alt="{weatherData.description}"
-      />
-    </div>
-  );
+    );
+  } else {
+    const apiKey = "75f4950e1c8c4405bfe894443eefc1e1";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(showTemp);
+
+    return "loading...";
+  }
 }
