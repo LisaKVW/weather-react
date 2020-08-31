@@ -31,13 +31,13 @@ export default function Weather(props) {
               <li>{weatherData.description}</li>
             </ul>
           </div>
-        </div>
-        <div className="col">
-          <ul>
-            <br />
-            <li> Humidity {weatherData.humidity} % </li>
-            <li> Wind {weatherData.wind} Km/H</li>
-          </ul>
+          <div className="col">
+            <ul>
+              <br />
+              <li> Humidity {weatherData.humidity} % </li>
+              <li> Wind {weatherData.wind} Km/H</li>
+            </ul>
+          </div>
         </div>
         <img src={weatherData.imgUrl} />
       </div>
