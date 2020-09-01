@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -22,27 +22,20 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <p className="current-update-location"> </p>
-        <div className="row">
-          <div className="col">
-            <ul>
-              <li>{weatherData.city}</li>
-              <li>
-                <FormattedDate date={weatherData.date} />
-              </li>
-              <li>{Math.round(weatherData.temperature)} ℃ </li>
-              <li>{weatherData.description}</li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul>
-              <br />
-              <li> Humidity {weatherData.humidity} % </li>
-              <li> Wind {weatherData.wind} Km/H</li>
-            </ul>
-          </div>
-        </div>
-        <img src={weatherData.imgUrl} />
+        <form className="form-inline">
+          <input type="text" placeholder="Search city" autoFocus="on" />
+          <input type="submit" value="search" />
+          <button type="button" id="location-emoji">
+            <span
+              className="round_pushpin"
+              role="img"
+              aria-label="current location"
+            >
+              📍
+            </span>
+          </button>
+        </form>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
