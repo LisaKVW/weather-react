@@ -11,7 +11,7 @@ export default function Look() {
       <div className="weather-app">
         <Header />
         <Search />
-        <Weather defaultCity="Haarlem" />
+        <Weather defaultCity="New York" />
         <Forecast />
       </div>
       <h1 className="Greetings"> </h1>

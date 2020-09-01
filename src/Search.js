@@ -1,7 +1,5 @@
 import React from "react";
 import "./Search.css";
-import axios from "axios";
-import Weather from "./Weather";
 
 export default function Search() {
   return (
