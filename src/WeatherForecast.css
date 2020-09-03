@@ -1,15 +1,17 @@
-.WeatherForecast #header-upcoming {
-  font-family: "Heebo", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  color: #f3efed;
-  padding: 0 0 20px 0;
-}
-
 .WeatherForecast {
   text-align: center;
   color: #f3efed;
+  padding: auto;
+  padding-bottom: 13px;
+  padding-right: 42px;
+  padding-left: 0px;
+  font-family: "Heebo", sans-serif;
+  list-style: none;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: -10px;
 }
+
 .WeatherForecast canvas {
   display: block;
   margin: 7px auto;

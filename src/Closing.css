@@ -1,6 +1,7 @@
 .Closing .github-link {
   margin: auto;
-  padding: auto;
+  padding: 0;
+  padding-left: 15px;
   font-family: "Work Sans", sans-serif;
   color: black;
   margin: auto;
