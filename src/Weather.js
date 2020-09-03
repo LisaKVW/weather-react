@@ -48,15 +48,6 @@ export default function Weather(props) {
             onChange={showSearchCity}
           />
           <input type="submit" value="search" />
-          <button type="button" id="location-emoji">
-            <span
-              className="round_pushpin"
-              role="img"
-              aria-label="current location"
-            >
-              📍
-            </span>
-          </button>
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast city={weatherData.city} />
