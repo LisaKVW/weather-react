@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <h1>
       {" "}
-      Hello!
+      Where would you like to go?
       <span className="sun_emoji" role="img" aria-label="sun">
         {" "}
         ☀️
