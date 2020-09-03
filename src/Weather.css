@@ -8,32 +8,12 @@
   line-height: 0.5;
   border-radius: 1px;
   font-family: "Heebo", sans-serif;
-  font-weight: bold;
-}
-.Weather #location-emoji {
-  background-color: #faf9fa;
-  border: 1px solid #545454;
-  color: black;
-  padding: 10px 12px;
-  text-decoration: none;
-  margin: 0;
-  line-height: 0.5;
-  border-radius: 1px;
-  font-family: "Heebo", sans-serif;
-  font-weight: bold;
-  display: block;
+  font-weight: bolder;
 }
 .Weather input[value="search"]:hover {
   cursor: pointer;
-  background-color: #d5dfe5;
+  background-color: #97d0b3;
   color: black;
-  font-weight: bold;
-  border: 1px solid #f3efed;
-}
-.Weather #location-emoji:hover {
-  cursor: pointer;
-  background-color: #d5dfe5;
-  color: black;
-  font-weight: bold;
+  font-weight: bolder;
   border: 1px solid #f3efed;
 }
