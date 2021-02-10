@@ -11,7 +11,7 @@ By: Lisa Venneker Wand
 
 
 ## Description
-A simple app to find the weather of your searched location in Celcius and Fahrenheit.
+A simple app that was first made JavaScript, now 're-made' in React. Use the app to find the weather of your searched location in Celcius and Fahrenheit.
 
 
 ## Technologies used
@@ -40,4 +40,5 @@ Screenshot of app:
 - Wireframe: https://www.invisionapp.com/freehand 
 - API for weather information: https://home.openweathermap.org/
 - Uploading images: https://imgur.com 
+- Moving weather Icons: https://www.npmjs.com/package/react-animated-weather 
 
